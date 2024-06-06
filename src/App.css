@@ -1,0 +1,756 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family :Gatefold Demi, serif
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+.megaimaga {
+  
+   background-size: cover;
+  height: 100%;
+}
+.dropdown-menu {
+  width: 100%;
+}
+.nav-link {
+  position: relative;
+}
+
+.downarrow {
+  display: inline;
+}
+
+.uparrow {
+  display: none;
+}
+
+.nav-link:hover .downarrow {
+  display: none;
+}
+
+.nav-link:hover .uparrow {
+  display: inline;
+}
+.logo2{
+  display:none
+}
+.nav-icons .cartt{
+  display: none;
+  
+}
+.carticon{
+  display: none;
+}
+.shop{
+  display: block;
+
+}
+
+.navbar-toggler{
+  font-size: small;
+}
+.nav-icons .search{
+  display: block;
+  
+}
+.searchicon{
+  display: none;
+  margin-top: 35px;
+ 
+}
+.login-icon{
+  display: none;
+}
+.nav-about{
+  
+  margin-right: 20px;
+}
+#grocery-div{
+  margin-top: 30px;
+}
+.close{
+  display: none;
+}
+.offcanvas{
+  width: 100%;
+  height: 100%;
+}
+.small-navbar{
+  display: block;
+  margin-bottom: 0 !important;
+}
+.navvitem{
+ 
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+
+
+.carousel {
+  position: relative;
+  width: 600px;
+  margin: auto;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.carousel-slides img {
+  min-width: 100%;
+  height: 400px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-slides img.active {
+  opacity: 1;
+}
+
+.custom-prev-arrow, .custom-next-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #de89bc;
+  border: none;
+  color: #bae8d4;
+  font-size: 1rem;
+  padding: 10px;
+  cursor: pointer;
+  padding: 15px 8px;
+  z-index: 1;
+}
+
+.custom-prev-arrow {
+  left: 10px;
+}
+
+.custom-next-arrow {
+  right: 10px;
+}
+
+.custom-prev-arrow:hover, .custom-next-arrow:hover {
+  background-color: rgba(236, 209, 209, 0.8);
+  color: black;
+}
+
+.carousel-slide {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.background-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.custom-swiper-button-prev,
+.custom-swiper-button-next {
+    position: absolute;
+    top: 0%; 
+    transform: translateY(30%);
+    z-index: 1000; 
+    width: 30px;
+    height: 30px;
+    background-color: #013609;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    border: 2px solid;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+
+.custom-swiper-button-prev {
+    left:1190px; 
+    padding: 18px;
+}
+
+.custom-swiper-button-next {
+    right: 20px;
+    padding: 18px; 
+}
+.custom-swiper-button-prev::after
+{
+ 
+  color: white;
+  font-size: 20px;
+ 
+}
+.custom-swiper-button-next::after {
+ 
+  color: white;
+  font-size: 20px;
+  
+}
+.prevbtn{
+  
+    left: 1210px;
+    top: -0%;
+  }
+  .nxtbtn{
+    right: 0px;
+  }
+  .ccprev{
+    left: 1390px !important; 
+    
+  }
+  .ccnxt{
+    right: 10px ;
+    
+  }
+
+  .little-dots{
+    background-image:  url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWxfwj4gaAEk0DKi7FO6Bv4GNZJMizInH5WuvUsBniLIig80LX');
+  }
+  .text1{
+    font-size: 18px;
+  }
+  .text2{
+    font-size: 55px;
+    justify-content: center;
+  }
+  .text3{
+    font-size: 15px;
+  }
+  .filter{
+    display: none;
+  }
+  .filterlg{
+    display: block;
+  }
+  .para1{
+    word-wrap:break-word
+  }
+  .inprev {
+    left:1360px  !important;
+     
+  }
+  
+  .innxt {
+    right: 20px  !important;
+    
+  }
+
+  .login-card{
+    border: 1px solid #BFBFBF;
+      background-color: white;
+      box-shadow: 5px 5px 10px 5px #aaaaaa;
+   
+  }
+  .calendar-icon {
+    position: absolute;
+    right: 15px;
+    top: 35px; 
+    pointer-events: none;
+}
+
+.card-content {
+  overflow: hidden;
+}
+
+.card-content img {
+  transition: transform 0.3s ease; 
+}
+
+.card-content:hover img {
+  transform: scale(1.1); }
+
+  .curve {
+    background-color: lightblue;
+    border-radius: 45% 45% 4% 4%; 
+    max-width: 100%; 
+    height: auto; 
+    border: 1px solid black;
+    opacity: 0.7;
+    top: 200px;
+    left: 150px;
+   display: block;
+    
+  }
+  .shadow-card:hover{
+    border: 1px solid #BFBFBF;
+      background-color: white;
+      box-shadow: 5px 2px #aaaaaa;
+   
+  }
+.cardtext{
+  font-size: 10px;
+}
+
+.signtext{
+  font-size: 15px;
+}
+.formtext{
+  font-size: 12px;
+}
+
+ 
+
+  @media only screen and (max-width: 2561px){
+   
+    /* .inprev {
+      left:2390px !important;  
+    }
+    
+    .innxt {
+      right: 20px !important;
+    } */
+   
+  }
+
+
+  @media only screen and (max-width: 1441px){
+     
+    .ccprev {
+      left:1310px !important; 
+      padding: 18px;
+      
+    }
+    
+    .ccnxt {
+      right: 20px !important;
+      padding: 18px; 
+    }
+    .inprev {
+      left:1290px !important;  
+    }
+    
+    .innxt {
+      right: 20px !important;
+    }
+    .curve{
+      top: 90px;
+      left: 20px;
+      
+     }
+  }
+
+
+
+
+  @media only screen and (max-width: 1025px){
+    .cprev {
+      left:830px; 
+      padding: 18px;
+      
+    }
+    
+    .cnxt {
+      right: 20px;
+      padding: 18px; 
+    }
+    .prevbtn {
+      left: 820px;
+      
+    }
+    .nxtbtn{
+      right: 0px;
+    }
+    .ccprev {
+      left:900px !important; 
+      
+      
+    }
+    
+    .ccnxt {
+      right: 20px !important;
+       
+    }
+    .inprev {
+      left:870px !important;  
+    }
+    
+    .innxt {
+      right: 20px !important;
+    }
+    .curve{
+      top: 80px;
+      left: 20px;
+      
+     }
+  }
+
+
+
+
+
+
+
+  @media only screen and (max-width: 769px){
+    
+    
+    .logo2{
+      display: block;
+     
+     margin-top: 0px;
+    
+    }
+    .log-on{
+      display: none;
+    }
+   .button{
+    margin-left: 0px;
+  }
+  .nav-icons{
+    margin-top: 10px;
+  }
+  
+  .carticon{
+    display: block;
+    margin-left: 5px;
+  }
+  .navbar-toggler{
+    margin-left: 10px;
+  }
+  
+  .nav-icons .search{
+    display: none;
+    
+  }
+  .searchicon{
+    display: block  ;
+    
+  }
+  .nav-icons .shop{
+    display: none;
+  }
+  .nav-order{
+    border-bottom:1px solid #baafaf;
+   
+  }
+  .nav-btn{
+    margin-left:  10px;
+    margin-top: 35px;
+  }
+  .login-icon{
+    display: block;
+    border-bottom:1px solid #1a1919;
+  }
+  .nav-about{
+    border-bottom:1px solid #baafaf;
+    margin-right: 0px;
+  }
+  .icons {
+    float: right;
+    margin-left: 5px;   
+}
+.div-mega{
+  display: block;
+  padding: 0;
+  text-align: left;
+  
+}
+#grocery-div{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+li .underline{
+  text-decoration: underline;
+}
+.close{
+  display: block;
+}
+.small-navbar{
+  display: block;
+}
+.cprev {
+  left:590px;  
+  padding: 18px;  
+}
+.cnxt {
+  right: 20px;
+  padding: 18px;  
+}
+.prevbtn {
+  left: 560px;
+}
+.nxtbtn{
+  right: 0px;
+}
+.ccprev {
+  left: 660px !important;
+}
+.ccnxt{
+  right: 0px !important;
+}
+.inprev {
+  left:620px !important;  
+}
+
+.innxt {
+  right: 20px !important;
+}
+
+.text1{
+  font-size: small;
+}
+.text2{
+  font-size: 35px;
+  justify-content: start;
+}
+.text3{
+  font-size: small;
+}
+.curve{
+  top: 70px;
+  left: 20px;
+  
+ }
+
+ .curve {
+  position: static;
+  margin: 1rem auto;
+  width: auto;
+}
+.signtext{
+  font-size: 10px;
+}
+ 
+
+   
+  }
+
+
+  @media only screen and (max-width: 426px){
+    .cprev {
+      left:300px; 
+      padding: 18px;
+      
+    }
+    
+    .cnxt {
+      right: 20px;
+      padding: 18px; 
+    }
+    .prevbtn {
+      left: 220px;
+    }
+    .nxtbtn{
+      right: 0px;
+    }
+ .ccprev {
+      left:300px !important; 
+      padding: 18px;
+      
+    }
+    
+    .ccnxt {
+      right: 20px !important;
+      padding: 18px;  
+    }
+    .inprev {
+      left:270px !important;  
+    }
+    
+    .innxt {
+      right: 20px !important;
+    }
+
+
+    .small-navbar{
+      display: none;
+    }
+    .fdiv{
+      
+        border: none;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 30px;   
+    }
+    .text1{
+      font-size: small;
+    }
+    .text2{
+      font-size: 35px;
+      justify-content: start;
+    }
+    .text3{
+      font-size: small;
+    }
+    
+    .text02{
+      font-size: '50px'
+    }
+    
+     .cardtext{
+      font-size: 10px;
+    }
+     
+    
+  }
+
+  @media only screen and (max-width: 376px){
+    .cprev {
+      left:250px; 
+      padding: 18px;
+      
+    }
+    
+    .cnxt {
+      right: 20px;
+      padding: 18px; 
+    }
+    .prevbtn {
+      left: 170px;
+    }
+    .nxtbtn{
+      right: 0px;
+    }
+    .ccprev {
+      left:250px !important;  
+      padding: 18px;
+      
+    }
+    
+    .ccnxt {
+      right: 20px !important;
+      padding: 18px;  
+    }
+
+    .inprev {
+      left:230px !important;  
+    }
+    
+    .innxt {
+      right: 20px !important;
+    }
+
+    .small-navbar{
+      display: none;
+    }
+    .text1{
+      font-size: small;
+    }
+    .text2{
+      font-size: 35px;
+      justify-content: start;
+    }
+    .text3{
+      font-size: small;
+    }
+    
+     .cardtext{
+      font-size: 10px;
+    }
+   
+  }
+
+  @media only screen and (max-width: 321px){
+    .cprev {
+      left:190px; 
+      padding: 18px;
+      
+    }
+    
+    .cnxt {
+      right: 20px;
+      padding: 18px;  
+    }
+    .prevbtn {
+      left: 120px;
+      
+    }
+    .nxtbtn{
+      right: 0px;
+    }
+    .ccprev {
+      left:190px !important;  
+    }
+    
+    .ccnxt {
+      right: 20px !important;
+    }
+    .inprev {
+      left:170px !important;  
+    }
+    
+    .innxt {
+      right: 20px !important;
+    }
+
+    .small-navbar{
+      display: none;
+    }
+    .little-dots{
+      height: 100%;
+    }
+    .text1{
+      font-size: small;
+    }
+    .text2{
+      font-size: 35px;
+      justify-content: start;
+    }
+    .text3{
+      font-size: small;
+    }
+    
+    .text02{
+      font-size: 30px;
+    }
+    
+    .cardtext{
+      font-size: 10px;
+    }
+   
+  }
+

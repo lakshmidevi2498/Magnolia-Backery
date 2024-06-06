@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+}
+
+.toggle-bar {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.toggle-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.toggle-icon::before,
+.toggle-icon::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.toggle-icon::before {
+    transform: translateY(-8px);
+}
+
+.toggle-icon::after {
+    transform: translateY(8px);
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-icon {
+    background-color: transparent;
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-icon::before {
+    transform: translateY(0) rotate(45deg);
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-icon::after {
+    transform: translateY(0) rotate(-45deg);
+}
